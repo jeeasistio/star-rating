@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/98bc12c08c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>Star Rating</title>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-star"></i> Star Rating</h1>
+  </header>
+
+  <main>
+    <section id="select-section">
+      <select id="select-item">
+        <option value="0" selected disabled>Select Item</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Xiaomi">Xiaomi</option>
+        <option value="Oppo">Oppo</option>
+        <option value="Vivo">Vivo</option>
+        <option value="Huawei">Huawei</option>
+      </select>
+    </section>
+    <section id="input-section">
+      <form id="form">
+        <input type="number" id="number" min="1" max="5" step="0.1" placeholder="Rate item" disabled>
+      </form>
+    </section>
+    <section id="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Items</th>
+            <th>Ratings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="Samsung">
+            <td>Samsung</td>
+            <td>
+              <div id="outer">
+                <div id="inner"></div>
+              </div>
+              <span class="num"></span>
+            </td>
+          </tr>
+          <tr id="Xiaomi">
+            <td>Xiaomi</td>
+            <td>
+              <div id="outer">
+                <div id="inner"></div>
+              </div>
+              <span class="num"></span>
+            </td>
+          </tr>
+          <tr id="Oppo">
+            <td>Oppo</td>
+            <td>
+              <div id="outer">
+                <div id="inner"></div>
+              </div>
+              <span class="num"></span>
+            </td>
+          </tr>
+          <tr id="Vivo">
+            <td>Vivo</td>
+            <td>
+              <div id="outer">
+                <div id="inner"></div>
+              </div>
+              <span class="num"></span>
+            </td>
+          </tr>
+          <tr id="Huawei">
+            <td>Huawei</td>
+            <td>
+              <div id="outer">
+                <div id="inner"></div>
+              </div>
+              <span class="num"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
